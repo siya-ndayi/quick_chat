@@ -79,18 +79,23 @@ public class Quick_chat {
         
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-       
-        String messageID = JOptionPane.showInputDialog("Enter message ID:");
-        String recipient = JOptionPane.showInputDialog("Enter recipient number:");
-        String messageText = JOptionPane.showInputDialog("Enter message:");
-
+       System.out.println("enter message id ");
+        String messageID = input.nextLine();
+        
+        System.out.println("enter recipient number");
+        String recipent = input.nextLine();
+        
+        System.out.println("enter message");
+        String messageText = input.nextLine();
+        
         if (messageText.length() > 250) {
-            JOptionPane.showMessageDialog(null,
-                    "Please enter a message of less than 250 characters.");
+            System.out.print("please enter a  message of less than 250 characters");
+            
         } else {
-            JOptionPane.showMessageDialog(null,
-                    "Message ready to send.");
+              System.out.println("Message ready to send");
         }
+            
+       
             
            
        // Task Constraints: Simulating a baseline authentication gate context
